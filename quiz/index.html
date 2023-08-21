@@ -9,21 +9,27 @@
 <body>
 
         <div class="container">
+            <div class="controls">
+                <button id="start-btn" class="btn" >Start</button>
+            </div>
             <div id="question-container" class="hide">
+                <div id="question"></div>
                 <div id="ans-buttons" class="btn-grid">
-                    <button class="btn correct">Answer 1</button>
-                    <button class="btn correct">Answer 2</button>
-                    <button class="btn correct">Answer 3</button>
-                    <button class="btn correct">Answer 4</button>
+                    <button class="btn" id="1" onclick="handleClick(this)"></button>
+                    <button class="btn" id="2" onclick="handleClick(this)"></button>
+                    <button class="btn" id="3" onclick="handleClick(this)"></button>
+                    <button class="btn" id="4" onclick="handleClick(this)"></button>
                 </div>
             </div>
-            <div class="controls">
-                <button id="start-btn" class="btn">Start</button>
-                <button id="next-btn" class="next-btn hide btn">Next</button>
-            </div>
+
+                <button id="next" class="btn hide">Next</button>
+                <button id="end" class="btn hide" onclick="showresult()">End Test</button>
+
         </div>
-        <div class="score">
-            <span id="right-answers"></span>
+        <br>
+        <div id="score" class="hide">
+            <div></div><h1 class="score-text">Your score is:</h1></div>
+            <span><h2 id="right-answers"></h2></span>
         </div>
         <script src="./app.js"></script>
 </body>

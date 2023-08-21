@@ -54,7 +54,7 @@ body.wrong{
     cursor: pointer;
     outline: none;
 }
-#start-btn,#next-btn{
+#start-btn,#next,#end{
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
@@ -67,4 +67,16 @@ body.wrong{
 }
 .hide{
     display: none;
+}
+#question{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color: azure;
+}
+.selected{
+    background-color:green;
+}
+#score{
+    
 }
